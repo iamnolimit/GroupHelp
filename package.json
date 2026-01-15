@@ -1,13 +1,31 @@
 {
+  "name": "libregrouphelp",
+  "version": "0.2.9.2",
+  "description": "Open-Source re-creation of telegram group manager Group Help in NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "docs": "node runDocs.js",
+    "test": "node index.js",
+    "vercel-build": "echo 'Build complete'",
+    "setup-webhook": "node setup-webhook.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sp3rick/GroupHelp.git"
+  },
+  "keywords": ["telegram", "bot", "group", "manager"],
+  "author": "Sp3rick",
+  "license": "MIT",
   "devDependencies": {
     "jsdoc-to-markdown": "^8.0.3"
   },
   "dependencies": {
-    "@xmldom/xmldom": "^0.8.10",
-    "canvas": "^2.11.2",
-    "canvg": "^4.0.2",
-    "chrono-node": "^2.7.6",
-    "node-fetch": "^2.7.0",
+    "@xmldom/xmldom": "^0.9.5",
+    "canvas": "^3.0.3",
+    "canvg": "^4.0.3",
+    "chrono-node": "^2.7.9",
+    "node-fetch": "^3.3.2",
     "node-telegram-bot-api": "github:yagop/node-telegram-bot-api",
     "randomcolor": "^0.6.2",
     "svg-captcha": "^1.4.0"

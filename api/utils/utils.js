@@ -368,17 +368,19 @@ function genSettings2Keyboard(lang, chatId)
     var keyboard =
     [
         //[{text: l[lang].S_TOPIC_BUTTON, callback_data: "S_TOPIC_BUTTON:"+chatId}],
-        //[{text: l[lang].S_WORDSBAN_BUTTON, callback_data: "S_WORDSBAN_BUTTON:"+chatId}],
+        [{text: l[lang].S_WORDSBAN_BUTTON || "🚫 Banned Words", callback_data: "WORDSBAN:MAIN:"+chatId}],
         //[{text: l[lang].S_RECURRING_BUTTON, callback_data: "S_RECURRING_BUTTON:"+chatId}],
         //[{text: l[lang].S_MEMBERS_BUTTON, callback_data: "S_MEMBERS_BUTTON:"+chatId}],
         //[{text: l[lang].S_MASKED_BUTTON, callback_data: "S_MASKED_BUTTON:"+chatId}],
         //[{text: l[lang].S_CHANNEL_BUTTON, callback_data: "S_CHANNEL_BUTTON:"+chatId}],
         //[{text: l[lang].S_CUSTOMCMD_BUTTON, callback_data: "S_CUSTOMCMD_BUTTON:"+chatId}],
         //[{text: l[lang].S_MAGICCMD_BUTTON, callback_data: "S_MAGICCMD_BUTTON:"+chatId}],
-        //[{text: l[lang].S_LENGTH_BUTTON, callback_data: "S_LENGTH_BUTTON:"+chatId}],
+        [{text: l[lang].S_LENGTH_BUTTON || "📏 Message Length", callback_data: "LENGTH:MAIN:"+chatId}],
+        [{text: l[lang].S_NIGHT_BUTTON || "🌙 Night Mode", callback_data: "NIGHT:MAIN:"+chatId}],
+        [{text: l[lang].S_ADMIN_BUTTON || "👨‍💼 @Admin", callback_data: "ADMIN_MENTION:MAIN:"+chatId}],
 
-        [{text: l[lang].S_PERMS_BUTTON, callback_data: "S_PERMS_BUTTON:"+chatId}/*,
-        {text: l[lang].S_LOGC_BUTTON, callback_data: "S_LOGC_BUTTON:"+chatId}*/],
+        [{text: l[lang].S_PERMS_BUTTON, callback_data: "S_PERMS_BUTTON:"+chatId},
+        {text: l[lang].S_LOGC_BUTTON || "📋 Log Channel", callback_data: "LOGC:MAIN:"+chatId}],
 
         [{text: l[lang].BACK2_BUTTON, callback_data: "SETTINGS_HERE:"+chatId},
         {text: l[lang].S_CLOSE_BUTTON, callback_data: "S_CLOSE_BUTTON:"+chatId},

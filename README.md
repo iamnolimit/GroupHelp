@@ -57,6 +57,81 @@ node index.js
 ✅ Alphabets
 ✅ Captcha (1 mode)
 ❌ Checks settings
+✅ @Admin mention (NEW!)
+❌ Blocks settings
+✅ Media blocks
+❌ Anti-NSFW
+✅ Warns settings
+✅ Night mode (NEW!)
+❌ Tag settings
+✅ Link settings
+❌ Approve mode
+❌ Message Deletion settings
+❌ Topics settings
+✅ Banned words (NEW!)
+❌ Recurring messages
+❌ Members management
+❌ Masked users settings
+❌ Discussion group settings
+❌ Personal commands
+❌ Magic Strickers/GIFs
+✅ Max message length settings (NEW!)
+✅ Log channel (NEW!)
+❌ Staff group
+❌ Group statistics
+✅ General commands permissions editor
+✅ Remove user-data from group (/forget)
+❌ Remove user-data from bot
+❌ User privacy mode
+✅ Crypto prices external api
+```
+
+## New Features Added
+
+### 1. Banned Words Filter (`bannedWords.js`)
+- Configure banned words that trigger punishments
+- Customizable punishment (warn/kick/mute/ban)
+- Optional message deletion
+- Add/remove words via bot interface
+
+### 2. Night Mode (`nightMode.js`)
+- Restrict messages during specified hours (UTC)
+- Configurable start and end times
+- Customizable punishment for violations
+- Users with "night" permission can bypass
+
+### 3. Message Length Limit (`messageLength.js`)
+- Set maximum message length in characters
+- Configurable punishment for long messages
+- Range: 10-10000 characters
+- Users with "length" permission can bypass
+
+### 4. @Admin Mention (`adminMention.js`)
+- Notify all admins when @admin is mentioned
+- Direct message notifications with link to message
+- Optional confirmation in group
+- Only notifies admins with equal/higher level
+
+### 5. Log Channel (`logChannel.js`)
+- Send logs to a designated channel
+- Configurable log types:
+  - Punishments
+  - Role changes
+  - Settings changes
+  - User joins/leaves
+  - Deleted messages
+- Easy channel setup via forwarded message
+
+All features are accessible via the Settings menu (use /settings command).
+✅ Langs and lang settings
+✅ Rules
+✅ Welcome
+✅ Anti-flood
+✅ Anti-spam
+✅ Goodbye
+✅ Alphabets
+✅ Captcha (1 mode)
+❌ Checks settings
 ❌ @Admin
 ❌ Blocks settings
 ✅ Media blocks

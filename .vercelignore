@@ -1,0 +1,30 @@
+# Ignore database files on Vercel
+database/
+
+# Ignore docs build
+docs/
+
+# Ignore node modules (will be installed by Vercel)
+node_modules/
+
+# Ignore local config (use environment variables)
+# config.json (commented - you may want to keep this)
+
+# Ignore MkDocs
+mkdocs.yml
+runDocs.js
+
+# Ignore test files
+*.test.js
+
+# Ignore git files
+.git/
+.gitignore
+
+# Ignore editor files
+.vscode/
+.idea/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
